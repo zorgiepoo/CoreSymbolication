@@ -138,6 +138,7 @@ Boolean CSArchitectureIs64Bit(cpu_type_t type);
  * Symbolicator functions
  */
 CSSymbolicatorRef CSSymbolicatorCreateWithMachKernel(void);
+CSSymbolicatorRef CSSymbolicatorCreateWithTask(vm_map_t task);
 pid_t CSSymbolicatorGetPid(CSSymbolicatorRef symbolicator);
 cpu_type_t CSSymbolicatorGetArchitecture(CSSymbolicatorRef symbolicator);
 CSSymbolOwnerRef CSSymbolicatorGetSymbolOwnerWithAddressAtTime(CSSymbolicatorRef symbolicator, mach_vm_address_t addr, uint64_t time);
